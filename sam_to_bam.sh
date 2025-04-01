@@ -12,7 +12,8 @@ source activate samtools
 
 # Define directories
 BASIC_DIR="output_sam_files_basic"
-IGOR_DIR="output_sam_files_igor"
+# IGOR_DIR="output_sam_files_igor"
+IGOR_DIR="output_sam_files_igor_fixed"
 
 # Create an output directory for BAM files
 mkdir -p ${BASIC_DIR}/bams
