@@ -12,7 +12,7 @@ Make it possible to retain genome-specific mappings indefinitely (e.g., for Qiit
 
 ## Benchmarking Strategy
 
-This will be evaluated using real metagenomic data, focusing on the alignment behavior and resulting downstream analyses. To establish a controlled baseline, we selected a monoculture dataset containing only _Staphylococcus aureus_ (_S. aureus_) published in the [Zebra paper](https://www.sciencedirect.com/org/science/article/pii/S2379507722003592). This mock community dataset provides a reliable ground truth for assessing alignment accuracy, sensitivity, specificity, and downstream taxonomic profiling. The raw data was downloaded from [QIITA study 11919](https://qiita.ucsd.edu/study/description/11919), and only the _S. aureus_ monoculture samples will be used.
+This will be evaluated using real metagenomic data, focusing on the alignment behavior and resulting downstream analyses. To establish a controlled baseline, we selected a monoculture dataset containing only _Staphylococcus aureus_ (_S. aureus_) published in the [Zebra paper](https://www.sciencedirect.com/org/science/article/pii/S2379507722003592). This mock community dataset provides a reliable ground truth for assessing alignment accuracy, sensitivity, specificity, and downstream taxonomic profiling. The raw data was downloaded from [QIITA study 11919](https://qiita.ucsd.edu/study/description/11919), and only the _S. aureus_ monoculture samples will be used. We will use the same [NCBI _S. aureus_ genome](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA263760/) as in the Zebra paper as the single reference genome.
 
 We will conduct the following alignments:
 
