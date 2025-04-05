@@ -40,10 +40,20 @@ SAMPLE_NAME=$(basename "$R1" .R1.trimmed.filtered.fastq.gz)
 
 echo "Running Bowtie2 on sample $SAMPLE_NAME"
 cd /home/yac027/Igor_bowtie2_test/bowtie2
-./bowtie2 -p 16 --no-exact-upfront --no-1mm-upfront -x $REF_INDEX \
--1 "$R1" -2 "$R2" --very-sensitive --seed 42 \
--a --np 1 --mp "1,1" --rdg "0,1" --rfg "0,1" --score-min "L,0,-0.05" \
---no-head --no-unal -l 100 -d -S "$OUTPUT_DIR/${SAMPLE_NAME}_l100_d.sam"
+
+# Igor bt2
+./bowtie2 -p 16 \
+  --no-exact-upfront --no-1mm-upfront \
+  --very-sensitive \
+  --seed 42 \
+  -a \
+  --np 1 --mp "1,1" --rdg "0,1" --rfg "0,1" \
+  --score-min "L,0,-0.05" \
+  --no-head --no-unal \
+  -l 100 -d \
+  -x "$REF_INDEX" \
+  -1 "$FASTQ1" -2 "$FASTQ2" \
+  -S "$OUTPUT_DIR/${SAMPLE_NAME}_igor.sam"
 
 echo "Finished processing $SAMPLE_NAME"
 

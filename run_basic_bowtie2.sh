@@ -45,12 +45,18 @@ echo "Processing sample: $SAMPLE_NAME" | tee -a /home/yac027/Igor_bowtie2_test/s
 echo "FASTQ1: $FASTQ1" | tee -a /home/yac027/Igor_bowtie2_test/slurm_out/bowtie2_basic_%A_%a.log
 echo "FASTQ2: $FASTQ2" | tee -a /home/yac027/Igor_bowtie2_test/slurm_out/bowtie2_basic_%A_%a.log
 
-# Run Bowtie2 with minimal parameters
-bowtie2 -x "$REF_INDEX" \
-  -1 "$FASTQ1" \
-  -2 "$FASTQ2" \
-  -S "$OUTPUT_DIR/${SAMPLE_NAME}.sam" \
-2>&1 | tee -a /home/yac027/Igor_bowtie2_test/slurm_out/bowtie2_basic_%A_%a.log
+# Standard bt2, same params as Igor's but -a -d -l 100 relaced by -k 16
+bowtie2 -p 16 \
+  --no-exact-upfront --no-1mm-upfront \
+  --very-sensitive \
+  --seed 42 \
+  --k 16 \
+  --np 1 --mp "1,1" --rdg "0,1" --rfg "0,1" \
+  --score-min "L,0,-0.05" \
+  --no-head --no-unal \
+  -x "$REF_INDEX" \
+  -1 "$FASTQ1" -2 "$FASTQ2" \
+  -S "$OUTPUT_DIR/${SAMPLE_NAME}_standard.sam"
 
 echo "Finished processing $SAMPLE_NAME" | tee -a /home/yac027/Igor_bowtie2_test/slurm_out/bowtie2_basic_%A_%a.log
 
