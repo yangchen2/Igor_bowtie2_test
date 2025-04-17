@@ -1,0 +1,49 @@
+Sample,Method,Total Reads,Mapped Reads,Properly Paired Reads,Uniquely Mapped Reads,Average MAPQ
+NC.Staphy1.10E,Standard Bowtie2 (-k 16),655,655,598,652,247.62748091603052
+NC.Staphy1.10E,Standard Bowtie2 (-a),655,655,598,652,247.62748091603052
+NC.Staphy1.10E,Igor's Bowtie2 (-a -d -l 100),655,655,598,652,247.62748091603052
+NC.Staphy1.11H,Standard Bowtie2 (-k 16),1274,1274,1116,1269,250.21585557299844
+NC.Staphy1.11H,Standard Bowtie2 (-a),1274,1274,1116,1269,250.21585557299844
+NC.Staphy1.11H,Igor's Bowtie2 (-a -d -l 100),1274,1274,1116,1269,250.21585557299844
+NC.Staphy1.2C,Standard Bowtie2 (-k 16),689,689,614,687,251.33381712626996
+NC.Staphy1.2C,Standard Bowtie2 (-a),689,689,614,687,251.33381712626996
+NC.Staphy1.2C,Igor's Bowtie2 (-a -d -l 100),689,689,614,687,251.33381712626996
+NC.Staphy1.3F,Standard Bowtie2 (-k 16),4,4,4,4,255.0
+NC.Staphy1.3F,Standard Bowtie2 (-a),4,4,4,4,255.0
+NC.Staphy1.3F,Igor's Bowtie2 (-a -d -l 100),4,4,4,4,255.0
+NC.Staphy1.5A,Standard Bowtie2 (-k 16),13743,13743,12296,13608,246.908098668413
+NC.Staphy1.5A,Standard Bowtie2 (-a),13743,13743,12296,13608,246.908098668413
+NC.Staphy1.5A,Igor's Bowtie2 (-a -d -l 100),13743,13743,12296,13608,246.908098668413
+NC.Staphy1.6D,Standard Bowtie2 (-k 16),411,411,350,409,248.28223844282238
+NC.Staphy1.6D,Standard Bowtie2 (-a),411,411,350,409,248.28223844282238
+NC.Staphy1.6D,Igor's Bowtie2 (-a -d -l 100),411,411,350,409,248.28223844282238
+NC.Staphy1.7G,Standard Bowtie2 (-k 16),124,124,112,124,250.90322580645162
+NC.Staphy1.7G,Standard Bowtie2 (-a),124,124,112,124,250.90322580645162
+NC.Staphy1.7G,Igor's Bowtie2 (-a -d -l 100),124,124,112,124,250.90322580645162
+NC.Staphy1.9B,Standard Bowtie2 (-k 16),398,398,348,392,250.5175879396985
+NC.Staphy1.9B,Standard Bowtie2 (-a),398,398,348,392,250.5175879396985
+NC.Staphy1.9B,Igor's Bowtie2 (-a -d -l 100),398,398,348,392,250.5175879396985
+NC.Staphy2.10E,Standard Bowtie2 (-k 16),83,83,80,83,255.0
+NC.Staphy2.10E,Standard Bowtie2 (-a),83,83,80,83,255.0
+NC.Staphy2.10E,Igor's Bowtie2 (-a -d -l 100),83,83,80,83,255.0
+NC.Staphy2.11H,Standard Bowtie2 (-k 16),8221,8221,7360,8193,249.39715363094513
+NC.Staphy2.11H,Standard Bowtie2 (-a),8221,8221,7360,8193,249.39715363094513
+NC.Staphy2.11H,Igor's Bowtie2 (-a -d -l 100),8221,8221,7360,8193,249.39715363094513
+NC.Staphy2.1A,Standard Bowtie2 (-k 16),21789,21789,19450,21686,249.3743173160769
+NC.Staphy2.1A,Standard Bowtie2 (-a),21789,21789,19450,21686,249.3743173160769
+NC.Staphy2.1A,Igor's Bowtie2 (-a -d -l 100),21789,21789,19450,21686,249.3743173160769
+NC.Staphy2.2D,Standard Bowtie2 (-k 16),778,778,696,775,245.2146529562982
+NC.Staphy2.2D,Standard Bowtie2 (-a),778,778,696,775,245.2146529562982
+NC.Staphy2.2D,Igor's Bowtie2 (-a -d -l 100),778,778,696,775,245.2146529562982
+NC.Staphy2.3G,Standard Bowtie2 (-k 16),164,164,54,162,245.6951219512195
+NC.Staphy2.3G,Standard Bowtie2 (-a),164,164,54,162,245.6951219512195
+NC.Staphy2.3G,Igor's Bowtie2 (-a -d -l 100),164,164,54,162,245.6951219512195
+NC.Staphy2.5B,Standard Bowtie2 (-k 16),284,284,258,282,246.94366197183098
+NC.Staphy2.5B,Standard Bowtie2 (-a),284,284,258,282,246.94366197183098
+NC.Staphy2.5B,Igor's Bowtie2 (-a -d -l 100),284,284,258,282,246.94366197183098
+NC.Staphy2.7G,Standard Bowtie2 (-k 16),520,520,456,517,251.575
+NC.Staphy2.7G,Standard Bowtie2 (-a),520,520,456,517,251.575
+NC.Staphy2.7G,Igor's Bowtie2 (-a -d -l 100),520,520,456,517,251.575
+NC.Staphy2.9B,Standard Bowtie2 (-k 16),1,1,0,1,255.0
+NC.Staphy2.9B,Standard Bowtie2 (-a),1,1,0,1,255.0
+NC.Staphy2.9B,Igor's Bowtie2 (-a -d -l 100),1,1,0,1,255.0
